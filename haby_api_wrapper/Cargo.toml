@@ -1,0 +1,29 @@
+[package]
+name = "haby_api_wrapper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+haby_core = {path = "../haby_core"}
+
+[dependencies.reqwest]
+version = "0.12"
+default-features = false
+features = [
+    "charset",
+    "http2",
+    "rustls-tls",
+    "json"
+]
+
+[dev-dependencies.tokio]
+version = "1"
+default-features = false
+features = [
+    "rt",
+    "macros"
+]
+
+[[test]]
+name = "integration_tests"
+test = false

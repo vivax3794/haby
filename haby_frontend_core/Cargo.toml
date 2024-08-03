@@ -1,0 +1,8 @@
+[package]
+name = "haby_frontend_core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+haby_api_wrapper = {path = "../haby_api_wrapper"}
+leptos = {version = "0.6", default-features=false, features=["csr", "nightly"]}

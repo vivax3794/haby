@@ -1,0 +1,12 @@
+.git
+.gitignore
+target
+.env
+
+# We dont want these to trigger cache invalidations
+justfile
+Server.dockerfile
+compose.yaml
+flake.nix
+flake.lock
+dist
